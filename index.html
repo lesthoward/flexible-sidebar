@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Navigation Bar</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css'/>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css'/>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Fira+Code:300,regular,500,600,700" rel="stylesheet" />
+    <link rel="stylesheet" href="./side.css">
+    <script src="./side.js" defer></script>
+    <meta name="author" content="Lester Howard">
+    <meta name="description" content="Flexible sidebar navigation that turn more responsive on different width devices">
+</head>
+<body>
+    <div class="sidebar sidebar--close">
+        <div class="sidebar__body">
+            <div class="sidebar__top">
+                <div class="sidebar__logo">
+                    <i class="fas fa-code sidebar__logo--img"></i>
+                    <span class="sidebar__logo--name">CodeLab</span>
+                    
+                </div>
+                <i class="fas fa-bars sidebar__close"></i>
+            </div>
+            <!-- .top -->
+            
+            <div class="sidebar__menu">
+                <div class="sidebar__search">
+                    <input type="text" class="sidebar__input" placeholder="Type to find out it">
+                    <i class="fas fa-search sidebar__search--icon" ></i>
+                </div>
+                <!-- sidebar__search -->
+
+                <ul class="sidebar__list">
+                    <li class="sidebar__item">
+                        <a class="sidebar__item--name">
+                            <i class="fas fa-border-all sidebar__item--icon"></i>
+                            <span class="sidebar__item--text">Dasboard</span>
+                        </a>
+                    </li>
+                    <!-- .sidebar__item -->
+                    <li class="sidebar__item">
+                        <a class="sidebar__item--name">
+                            <i class="fas fa-user-astronaut sidebar__item--icon"></i>
+                            <span class="sidebar__item--text">User</span>
+                        </a>
+                    </li>
+                    <!-- .sidebar__item -->
+                    <li class="sidebar__item">
+                        <a class="sidebar__item--name">
+                            <i class="fas fa-dice-d6 sidebar__item--icon"></i>
+                            <span class="sidebar__item--text">Entertainment</span>
+                        </a>
+                    </li>
+                    <!-- .sidebar__item -->
+                </ul>
+                <!-- .sidebar___list -->
+            </div>
+            <!-- .sidebar__menu -->
+        </div>
+        <!-- .sidebar__body -->
+        <div class="sidebar__footer">
+            <i class="sidebar__logout fas fa-door-open"></i>
+        </div>
+    </div>
+</body>
+</html>
